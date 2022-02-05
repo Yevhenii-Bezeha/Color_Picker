@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}

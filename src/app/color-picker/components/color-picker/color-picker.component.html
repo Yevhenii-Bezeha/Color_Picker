@@ -1,0 +1,12 @@
+<div class="colour-picker">
+  <h1 class="colour-picker__title">Material Colors</h1>
+  <div>
+    <app-list [colorsArr]="selectedColors" [shouldBeChecked]="true"></app-list>
+  </div>
+  <div>
+    <app-list
+      (colorSelected)="onClick($event)"
+      [colorsArr]="allColors"
+    ></app-list>
+  </div>
+</div>

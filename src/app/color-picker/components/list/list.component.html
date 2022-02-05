@@ -1,0 +1,13 @@
+<ul class="list">
+  <li *ngFor="let color of colorsArr" class="list__item">
+    <button
+      (click)="onClick(color)"
+      [style.background-color]="color.colorName"
+      class="list__btn"
+    >
+      <mat-icon *ngIf="isChecked" aria-hidden="false" aria-label="Selected icon"
+        >done
+      </mat-icon>
+    </button>
+  </li>
+</ul>
